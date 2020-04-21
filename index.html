@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+     <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>muruá</title>
+     <meta name="description" content="HTML tutorial">
+     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+     <meta name="author" content="MárciaRodrigues">
+     <meta http-equiv="refresh" content="30">
+     <meta charset="UTF-8">
+
+     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+     </head>
+<!---Content starts here -->
+
+<body>
+     <header>
+
+       <a id="menu_icon">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+       <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="black"/>
+       </svg>
+       </a>
+
+
+       <div id="drawer">
+       <nav>
+         <a href="#unordered"> Sobre a marca</a>
+         <br>
+         <a href="#ordered"> Categorias por lista e links</a>
+         <br>
+         <a href="#color"> Meias</a>
+         <br>
+       </nav>
+       </div>
+
+    <img src ="images/titulo3.png">
+
+   <!--<h1>WEBSITE</h1>
+    <p>Em construção.</p>
+    <h4>Design de Interação</h4>-->
+    <hr>
+     </header>
+
+
+<nav id="tabletPC" class="col-3">
+
+    <a href="#unordered"> Sobre a marca</a>
+    <br>
+    <a href="#ordered"> Categorias por lista e links</a>
+    <br>
+    <a href="#color"> Meias</a>
+    <br>
+
+
+</nav>
+
+
+<div id="container" class= "col-9">
+  <section class="slideshow-container">
+
+  <article class="mySlides" class="fade">
+  <figure>
+     <img src="images/img-01.png">
+     <!--<figcaption>Figure 1: Running to learn HTML5!</figcaption>-->
+  </figure>
+  </article>
+  <article class="mySlides" class="fade">
+  <figure>
+     <img src="images/img-02.png">
+     <!--<figcaption>Figure 2: Learning HTML5 is too easy...</figcaption>-->
+  </figure>
+  </article>
+  <article class="mySlides" class="fade">
+  <figure>
+     <img src="images/img-03.png">
+    <!-- <figcaption>Figure 3: Are you having difficulties with HTML5?</figcaption>-->
+  </figure>
+  </article>
+    <div class="dotpoints">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+<section>
+    <a name="unordered">
+
+    <h2> SOBRE A MURUÁ </h2>
+    <h5>A muruá é uma marca de meias personalizadas para todos os gostos.Meias criativas mas nada de dividir a meias! Cada um tem o seu par de acordo a personalidade própria.
+       Os valores e principios pelos quais a marca se rege são:</h5>
+    <h5>
+        <li>Criatividade </li>
+        <li>Sustentabilidade</li>
+        <li>Felicidade</li>
+
+    </h5>
+</section>
+
+
+<section>
+     <!--<a name="ordered">
+     <h2> Ordered List Tag </h2>
+     <ol>
+     <li><u> Adulto </u></li>
+     <li><u> Criança </u></li>
+     </ol>
+   -->
+</section>
+
+<section>
+     <a name="color">
+     <h2>COLEÇÃO</h2>
+     <p>  </p>
+          <img src ="images/meias1.jpg">
+          <img src ="images/meias2.jpg">
+          <img src ="images/meias3.jpg">
+          <img src ="images/meias4.jpg">
+          <img src ="images/meias5.jpg">
+          <img src ="images/meias6.jpg">
+</section>
+
+
+
+<section>
+     <a name="video">
+     <h2>VIDEO PROMOCIONAL</h2>
+     <iframe width="894" height="426" src="https://www.youtube.com/embed/VXhqATA5F9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+
+<section>
+     <a name="tabela">
+     <h2></h2>
+     <table border=“1px”>
+   <th colspan="3"> TABELA DE INFORMAÇÕES </th>
+   <tr>
+   <td> Condições </td> <td> Descrição e Portes de envio </td> <td> Valores </td>
+   </tr>
+   <tr>
+   <td rowspan="4"> As situações de trocas e devoluções são avaliadas individualmente.
+   Os valores dos produtos são fixos.
+ Fazemos promoções.</td>
+   <td rowspan="3"> B-bebé | C-criança | A-adulto </td>
+   <td> B 3,5€ </td>
+   </tr>
+   <tr>
+   <td> C 5€ </td>
+   </tr>
+   <tr>
+   <td> A 7€ </td>
+   </tr>
+   <tr>
+   <td> Portes de envio- acrescentado ao valor do produto </td> <td> 3,5€ </td>
+   </tr>
+   </table>
+
+</div>
+</section>
+
+     <aside class= "col-2">
+     <h3>Criação da marca</h3>
+        <p>A muruá foi criada como marca própria para a UC de Design de Identidade no 1º ano da licenciatura de AVT.
+          <p>Tem como objectivo refletir a minha personalidade no seu nome, formas, cores e área de negócio.
+        </p>
+     </aside>
+
+
+<footer>
+     <h2>Developed by Márcia Rodrigues</h2>
+</footer>
+
+<script>
+   let slideIndex = 0;
+   showSlides();
+   function showSlides() {
+   let i = null;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none";
+   }
+   slideIndex++;
+   if (slideIndex> slides.length) {slideIndex = 1}
+   for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+   setTimeout(showSlides, 3000); // Change image every 3 seconds=3000
+   }
+
+   let menu_icon = document.querySelector('#menu_icon');
+   let container = document.querySelector("#container");
+   let drawer = document.querySelector('#drawer');
+   menu_icon.addEventListener('click', function (e) {
+   drawer.classList.toggle('open');
+   e.stopPropagation();
+   });
+   container.addEventListener('click', function () {
+   drawer.classList.remove('open');
+   });
+
+</script>
+
+</body>
+<!---Content ends here -->
+</html>
